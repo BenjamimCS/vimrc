@@ -103,7 +103,7 @@ noremap <leader>h <c>w <left>
 nmap <F8> :TagbarToggle<CR>
 
 " == Vi flow == "
-nnoremap <c-q> :q<CR>
+nnoremap <leader><c-q> :q<CR>
 nnoremap <c-s> :w<CR>
 inoremap <c-s> <esc>:w<CR>i
 
