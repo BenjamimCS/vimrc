@@ -39,6 +39,8 @@ Plug 'ap/vim-css-color'
 " == Theme == "
 " Monokai
 Plug 'phanviet/vim-monokai-pro'
+" Synthwave84
+Plug 'artanikin/vim-synthwave84'
 " Candle-grey
 Plug 'aditya-azad/candle-grey'
 " Awesome Colorschemes - pack of themes
