@@ -89,11 +89,11 @@ let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
 " === MAP Keys === "
-let mapleader = "z"
+let mapleader = ","
 
 " Goto vimrc
 noremap <leader>sv :source $MYVIMRC<CR>
-noremap <leader>ev :edit $MYVIMRC<CR>
+noremap <leader>ev :vsplit $MYVIMRC<CR>
 
 noremap <leader>l <c>w <right>
 noremap <leader>h <c>w <left>
