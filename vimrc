@@ -130,6 +130,10 @@ inoremap <leader>tt <esc>:TransparentToggle<CR>i
 nnoremap <leader>tt :TransparentToggle<CR>
 "echom "Wellcome >^.^<"
 
+" === Abbreviations === "
+iabbrev mygh https://github.com/BenjamimCS
+iabbrev wdith width
+
 " === Themes === "
 " == VIm Colorschme == "
 colorscheme jellybeans
@@ -137,6 +141,26 @@ colorscheme jellybeans
 " === PLUGINS === "
 " == Emmet == "
 let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_settings = {
+\  'variables': {'lang': 'en'},
+\  'html': {
+\    'default_attributes': {
+\      'option': {'value': v:null},
+\      'textarea': {'id': v:null, 'name': v:null, 'cols': 10, 'rows': 10},
+\    },
+\    'snippets': {
+\      'html:5': "<!DOCTYPE html>\n"
+\              ."<html lang=\"${lang}\">\n"
+\              ."<head>\n"
+\              ."\t<meta charset=\"${charset}\">\n"
+\              ."\t<title></title>\n"
+\              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+\              ."</head>\n"
+\              ."<body>\n\t${child}|\n</body>\n"
+\              ."</html>",
+\    },
+\  },
+\}
 
 " hi Normal guibg=NONE ctermbg=NONE
 
