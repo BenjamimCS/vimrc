@@ -76,6 +76,7 @@ set nowrap
 set title
 set cursorline
 set termguicolors
+set number
 set relativenumber
 set hidden
 set autoread
