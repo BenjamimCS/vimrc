@@ -27,6 +27,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 " IndentLine
 Plug 'Yggdroot/indentLine'
+" == Local Indent
+Plug 'tweekmonster/local-indent.vim' 
 " tagbar
 Plug 'preservim/tagbar'
 " Lorem Generator
