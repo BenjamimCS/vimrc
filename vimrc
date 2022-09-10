@@ -1,6 +1,6 @@
 call plug#begin()
 
-" == Essencial == "
+" == Essentials == "
 " Vim Startfy
 Plug 'mhinz/vim-startify'
 
