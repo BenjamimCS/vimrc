@@ -15,6 +15,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 " CTRLP.vim
 Plug 'ctrlpvim/ctrlp.vim'
+" Visual Multi
+Plug 'mg979/vim-visual-multi' 
 " Comment Lines
 Plug 'tpope/vim-commentary'
 " Vim AutoSave
