@@ -201,7 +201,6 @@ let g:airline_symbols.dirty                    ='⚡'
 
 " === NERTree plugin === "
 let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heavy feature too. default: normal
-let g:NERDTreeGitStatusGitBinPath = '/bin/git' " default: git (auto find in path)
 
 " == ON START === "
 
