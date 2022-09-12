@@ -117,6 +117,10 @@ nnoremap <c-u> v e U w
 inoremap <c-u> <esc>v e U w<esc>i
 
 " == Navigate between buffers == "
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+nnoremap <leader>bd :bd<CR>
+
 nnoremap <c-j> <c-w><Down>
 nnoremap <c-h> <c-w><Left>
 nnoremap <c-k> <c-w><Up>
