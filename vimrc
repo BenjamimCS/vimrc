@@ -108,6 +108,9 @@ nnoremap <leader><c-q> :q<CR>
 nnoremap <c-s> :w<CR>
 inoremap <c-s> <esc>:w<CR>i
 
+" Press <leader> and ; for enter command mode
+nnoremap <leader>; :
+
 " Wrap 
 nnoremap <leader>w :set wrap<CR>
 nnoremap <leader>nw :set nowrap<CR>
