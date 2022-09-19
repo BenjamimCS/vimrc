@@ -99,23 +99,25 @@ let mapleader = ","
 noremap <leader>sv :source $MYVIMRC<CR>
 noremap <leader>ev :vsplit $MYVIMRC<CR>
 
-" noremap <TAB>	
+" noremap <TAB>
 " == tagbar == "
 nmap <F8> :TagbarToggle<CR>
 
 " == Vi flow == "
+" = ^q for quit "
 nnoremap <leader><c-q> :q<CR>
+" = ^s for save "
 nnoremap <c-s> :w<CR>
 inoremap <c-s> <esc>:w<CR>i
 
 " Press <leader> and ; for enter command mode
 nnoremap <leader>; :
 
-" Wrap 
+" == Wrap == "
 nnoremap <leader>w :set wrap<CR>
 nnoremap <leader>nw :set nowrap<CR>
 
-" press CTRL + V to Uppercase the current word
+" == press CTRL + V to Uppercase the current word == "
 nnoremap <c-u> v e U w
 inoremap <c-u> <esc>v e U w<esc>i
 
