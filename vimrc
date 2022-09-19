@@ -177,16 +177,16 @@ let g:user_emmet_settings = {
 " hi Normal guibg=NONE ctermbg=NONE
 
 " === Airline === "
-let g:airline#extensions#tabline#enabled=1
-" let g:airline_powerline_fonts=1
-let g:airline_statusline_ontop=0
-" let g:airline_theme='monokai_pro'
-let g:airline#extensions#tabline#formatter='unique_tail'
+let g:airline#extensions#tabline#enabled       = 1
+let g:airline_powerline_fonts                  = 1
+let g:airline_statusline_ontop                 = 0
+let g:airline_theme                            = 'sonokai'
+let g:airline#extensions#tabline#formatter     = 'unique_tail'
 
 let g:airline_symbols = {}
 
-let g:airline_left_sep                         = "\ue0b8"
-let g:airline_left_alt_sep                     = "\ue0b9"
+let g:airline_left_sep                         = "\ue0b8 "
+let g:airline_left_alt_sep                     = "\ue0b9 "
 let g:airline_right_sep                        = "\ue0ba "
 let g:airline_right_alt_sep                    = "\ue0bb "
 let g:airline#extensions#tabline#left_sep      = " "
