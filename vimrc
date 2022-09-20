@@ -99,7 +99,6 @@ let mapleader = ","
 noremap <leader>sv :source $MYVIMRC<CR>
 noremap <leader>ev :vsplit $MYVIMRC<CR>
 
-" noremap <TAB>
 " == tagbar == "
 nmap <F8> :TagbarToggle<CR>
 
