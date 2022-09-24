@@ -85,6 +85,8 @@ set termguicolors
 set number
 set relativenumber
 set hidden
+set hlsearch
+set incsearch
 set autoread
 filetype plugin on
 
