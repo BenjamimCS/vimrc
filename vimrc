@@ -25,6 +25,8 @@ Plug '907th/vim-auto-save'
 Plug 'djoshea/vim-autoread'
 " Vim Polyglot
 Plug 'sheerun/vim-polyglot'
+" Liquid enchancements for Vi
+Plug 'tpope/vim-liquid'
 " Auto Pairs
 Plug 'jiangmiao/auto-pairs'
 " IndentLine
