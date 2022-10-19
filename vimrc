@@ -79,6 +79,7 @@ set shiftwidth=2
 set scrolloff=8
 set cmdheight=2
 set tabstop=2
+set expandtab
 set mouse=a
 set nowrap
 set title
