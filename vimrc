@@ -123,7 +123,7 @@ nnoremap <leader>; :
 nnoremap <leader>w :set wrap<CR>
 nnoremap <leader>nw :set nowrap<CR>
 
-" == press CTRL + V to Uppercase the current word == "
+" == press , + CTRL + U to Uppercase the current word == "
 nnoremap <c-u> v e U w
 inoremap <c-u> <esc>v e U w<esc>i
 
