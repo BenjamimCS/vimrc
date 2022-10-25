@@ -17,6 +17,8 @@ Plug 'dense-analysis/ale'
 Plug 'ctrlpvim/ctrlp.vim'
 " Visual Multi
 Plug 'mg979/vim-visual-multi' 
+" Vim Move
+Plug 'matze/vim-move'
 " Comment Lines
 Plug 'tpope/vim-commentary'
 " Vim AutoSave
