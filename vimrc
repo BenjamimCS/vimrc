@@ -127,6 +127,12 @@ nnoremap <leader>nw :set nowrap<CR>
 nnoremap <c-u> v e U w
 inoremap <c-u> <esc>v e U w<esc>i
 
+" == Resize windows == "
+nnoremap <C-Up>   :resize -1<CR>
+nnoremap <C-Down> :resize +1<CR>
+nnoremap <C-Left> :vertical resize -1<CR>
+nnoremap <C-Right> :vertical resize +1<CR>
+
 " == Navigate between buffers == "
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
