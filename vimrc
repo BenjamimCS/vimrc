@@ -260,3 +260,12 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " === Coc.nvim === "
 let g:coc_global_extensions=['coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-emmet', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', ]
+" == Use TAB to confirm completion == "
+inoremap <expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
+
+" == Use j and k to navigate completion "
+inoremap <expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
+inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
+
+" === IndentLine === "
+let g:indentLine_char_list = ['▏']
