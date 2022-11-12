@@ -259,4 +259,4 @@ let g:ale_completion_enabled=0
 let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " === Coc.nvim === "
-let g:coc_global_extensions=['coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', ]
+let g:coc_global_extensions=['coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-emmet', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', ]
