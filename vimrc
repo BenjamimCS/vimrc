@@ -134,8 +134,8 @@ nnoremap <C-Left> :vertical resize -1<CR>
 nnoremap <C-Right> :vertical resize +1<CR>
 
 " == Navigate between buffers == "
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
+nnoremap <leader>l :bn<CR>
+nnoremap <leader>h :bp<CR>
 nnoremap <leader>bd :buffers<CR>:bd<SPACE>
 
 nnoremap <c-j> <c-w><Down>
