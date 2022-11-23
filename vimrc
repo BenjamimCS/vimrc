@@ -260,6 +260,15 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " === Coc.nvim === "
 let g:coc_global_extensions=['coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-emmet', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', ]
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
 " == Use TAB to confirm completion == "
 inoremap <expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
 
