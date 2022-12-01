@@ -65,6 +65,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
+" Markdown Preview "
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 call plug#end()
 
