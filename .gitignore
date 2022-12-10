@@ -1,5 +1,5 @@
 /plugged/
 /autoload/
 /after/
-*.swp
+*.sw[a-z]
 /.netrwhist
