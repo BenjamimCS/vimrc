@@ -63,6 +63,9 @@ Plug 'tribela/vim-transparent'
 Plug 'vim-airline/vim-airline'
 " VIM Airline Themes
 Plug 'vim-airline/vim-airline-themes'
+" Wintabs
+Plug 'zefei/vim-wintabs'
+Plug 'zefei/vim-wintabs-powerline'
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
 " Markdown Preview "
