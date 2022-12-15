@@ -138,10 +138,6 @@ nnoremap <c-h> <c-w><Left>
 nnoremap <c-k> <c-w><Up>
 nnoremap <c-l> <c-w><Right>
 
-" == For NERDTree == "
-nnoremap <c-e> :NERDTreeToggle<CR>
-inoremap <c-e> <esc>:NERDTreeToggle<CR>
-
 " == Transparent == "
 inoremap <leader>tt <esc>:TransparentToggle<CR>i
 nnoremap <leader>tt :TransparentToggle<CR>
@@ -227,27 +223,6 @@ let g:coc_explorer_global_presets = {
 \   'tab:$': {
 \     'position': 'tab:$',
 \     'quit-on-open': v:true,
-\   },
-\   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingTop': {
-\     'position': 'floating',
-\     'floating-position': 'center-top',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingLeftside': {
-\     'position': 'floating',
-\     'floating-position': 'left-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingRightside': {
-\     'position': 'floating',
-\     'floating-position': 'right-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
 \   },
 \   'simplify': {
 \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
