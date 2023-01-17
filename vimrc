@@ -283,3 +283,8 @@ inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
 
 " === IndentLine === "
 let g:indentLine_char_list = ['▏']
+
+" === MarkdownPreview.nvim === "
+" set to 1, echo preview page url in command line when open preview page
+" default is 0
+let g:mkdp_echo_preview_url = 1
