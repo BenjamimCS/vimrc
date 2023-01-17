@@ -75,6 +75,7 @@ call plug#end()
 
 " set t_Co=256 " enable colors in terminal
 set autoread
+set fillchars=vert:\ 
 
 syntax enable
 set encoding=utf-8
