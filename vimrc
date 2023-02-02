@@ -63,6 +63,9 @@ Plug 'tribela/vim-transparent'
 Plug 'vim-airline/vim-airline'
 " VIM Airline Themes
 Plug 'vim-airline/vim-airline-themes'
+" Wintabs
+Plug 'zefei/vim-wintabs'
+Plug 'zefei/vim-wintabs-powerline'
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
 " Markdown Preview "
@@ -136,9 +139,9 @@ nnoremap <C-Left> :vertical resize -1<CR>
 nnoremap <C-Right> :vertical resize +1<CR>
 
 " == Navigate between buffers == "
-nnoremap <leader>l :bn<CR>
-nnoremap <leader>h :bp<CR>
-nnoremap <leader>bd :buffers<CR>:bd<SPACE>
+nnoremap <leader>l :WintabsNext<CR>
+nnoremap <leader>h :WintabsPrevious<CR>
+nnoremap <leader>d :WintabsClose<CR>
 
 nnoremap <c-j> <c-w><Down>
 nnoremap <c-h> <c-w><Left>
