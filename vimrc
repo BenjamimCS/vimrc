@@ -41,8 +41,6 @@ Plug 'preservim/tagbar'
 Plug 'w3bdev1/lorem.vim'
 " Emmet Plugin
 Plug 'mattn/emmet-vim'
-" Vim CSS Color - for a colorized hex, rgb codes
-Plug 'ap/vim-css-color'
 
 " == Theme == "
 " Monokai
