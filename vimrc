@@ -118,6 +118,7 @@ nmap <F8> :TagbarToggle<CR>
 " == Vi flow == "
 " = <leader> + q for quit = "
 nnoremap <leader>q :q<CR>
+
 " = <leader> + s for save = "
 nnoremap <leader>s      :w<CR>
 inoremap <leader>s <esc>:w<CR>i
@@ -143,6 +144,7 @@ nnoremap <leader>l :WintabsNext<CR>
 nnoremap <leader>h :WintabsPrevious<CR>
 nnoremap <leader>d :WintabsClose<CR>
 
+" == Navigate between windows == "
 nnoremap <c-j> <c-w><Down>
 nnoremap <c-h> <c-w><Left>
 nnoremap <c-k> <c-w><Up>
