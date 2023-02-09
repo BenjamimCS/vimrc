@@ -116,18 +116,17 @@ noremap <leader>ev :vsplit $MYVIMRC<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " == Vi flow == "
-" = ^q for quit "
-nnoremap <leader><c-q> :q<CR>
-" = ^s for save "
-nnoremap <c-s> :w<CR>
-inoremap <c-s> <esc>:w<CR>i
+" = <leader> + q for quit = "
+nnoremap <leader>q :q<CR>
+" = <leader> + s for save = "
+nnoremap <leader>s      :w<CR>
+inoremap <leader>s <esc>:w<CR>i
 
-" Press <leader> and ; for enter command mode
+" = <leader> + ; for enter command mode = "
 nnoremap <leader>; :
 
-" == Wrap == "
-nnoremap <leader>w :set wrap<CR>
-nnoremap <leader>nw :set nowrap<CR>
+" == Wrap/Unwrap == "
+nnoremap <leader>w :set wrap!<CR>
 
 " == press , + CTRL + U to Uppercase the current word == "
 nnoremap <c-u> v e U w
@@ -150,8 +149,8 @@ nnoremap <c-k> <c-w><Up>
 nnoremap <c-l> <c-w><Right>
 
 " == For NERDTree == "
-nnoremap <c-e> :NERDTreeToggle<CR>
-inoremap <c-e> <esc>:NERDTreeToggle<CR>
+nnoremap <leader>e      :NERDTreeToggle<CR>
+inoremap <leader>e <esc>:NERDTreeToggle<CR>
 
 " == Transparent == "
 inoremap <leader>tt <esc>:TransparentToggle<CR>i
