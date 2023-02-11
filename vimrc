@@ -121,7 +121,7 @@ nnoremap <leader>q :q<CR>
 
 " = <leader> + s for save = "
 nnoremap <leader>s      :w<CR>
-inoremap <leader>s <esc>:w<CR>i
+inoremap <C-s>     <esc>:w<CR>i
 
 " = <leader> + ; for enter command mode = "
 nnoremap <leader>; :
@@ -152,10 +152,9 @@ nnoremap <c-l> <c-w><Right>
 
 " == For NERDTree == "
 nnoremap <leader>e      :NERDTreeToggle<CR>
-inoremap <leader>e <esc>:NERDTreeToggle<CR>
+inoremap <C-e>     <esc>:NERDTreeToggle<CR>
 
 " == Transparent == "
-inoremap <leader>tt <esc>:TransparentToggle<CR>i
 nnoremap <leader>tt :TransparentToggle<CR>
 "echom "Wellcome >^.^<"
 
