@@ -158,6 +158,15 @@ inoremap <C-e>     <esc>:NERDTreeToggle<CR>
 nnoremap <leader>tt :TransparentToggle<CR>
 "echom "Wellcome >^.^<"
 
+" === Autocmds === "
+
+" == Yaml ==
+augroup yaml_tabs
+  autocmd!
+  autocmd BufNewFile,BufRead,FileType,VimEnter,BufEnter
+  \ *.yml,*.yaml setlocal tabstop=3 | setlocal shiftwidth=3
+augroup END
+
 " === Abbreviations === "
 iabbrev mygh https://github.com/BenjamimCS
 iabbrev wdith width
