@@ -292,7 +292,14 @@ inoremap <expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
 inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
 
 " === IndentLine === "
+let g:indentLine_enabled   = 0
 let g:indentLine_char_list = ['▏']
+
+" == Do not start in any buffer == "
+augroup indentLines_au
+  autocmd!
+  autocmd BufWinEnter *.* IndentLinesEnable
+augroup END
 
 " === MarkdownPreview.nvim === "
 " set to 1, echo preview page url in command line when open preview page
