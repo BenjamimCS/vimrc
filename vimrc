@@ -73,7 +73,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 call plug#end()
 
-" set t_Co=256 " enable colors in terminal
 set autoread
 set fillchars=vert:\ 
 
@@ -156,7 +155,6 @@ inoremap <C-e>     <esc>:NERDTreeToggle<CR>
 
 " == Transparent == "
 nnoremap <leader>tt :TransparentToggle<CR>
-"echom "Wellcome >^.^<"
 
 " === Autocmds === "
 
@@ -228,27 +226,13 @@ let g:airline_right_alt_sep                    = ''
 " let g:airline_symbols.maxlinenr                = '☰ '
 " let g:airline_symbols.dirty                    ='⚡'
 
-" vim-devicons
-" setting a font to use
-" set guifont=<FONT_NAME> <FONT_SIZE>
-
 " === NERTree plugin === "
 let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heavy feature too. default: normal
-
-" == ON START === "
-
-" Start NERDTree and put the cursor back in the other window.
-"
-" Start NERDTree and leave the cursor in it.
-" autocmd VimEnter * NERDTree
-"
-" Start NERDTree when Vim is started without file arguments.
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 " == Exiting == "
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
