@@ -4,5 +4,11 @@
       "command": "lua-lsp",
       "filetypes": ["lua"]
     }
-  }
+  },
+
+  // Coc Explorer
+  "explorer.icon.enableNerdfont": true,
+  "explorer.position": "left",
+  // "explorer.previewAction.onHover": true,
+  "explorer.icon.source": "vim-devicons"
 }

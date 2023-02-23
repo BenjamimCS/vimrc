@@ -4,11 +4,6 @@ call plug#begin()
 " Vim Startfy
 Plug 'mhinz/vim-startify'
 
-" NERDTree
-Plug 'preservim/nerdtree'
-" NERDTree Git
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
 " COC NVIM
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Ale
@@ -149,10 +144,6 @@ nnoremap <c-h> <c-w><Left>
 nnoremap <c-k> <c-w><Up>
 nnoremap <c-l> <c-w><Right>
 
-" == For NERDTree == "
-nnoremap <leader>e      :NERDTreeToggle<CR>
-inoremap <C-e>     <esc>:NERDTreeToggle<CR>
-
 " == Transparent == "
 nnoremap <leader>tt :TransparentToggle<CR>
 
@@ -226,21 +217,43 @@ let g:airline_right_alt_sep                    = ''
 " let g:airline_symbols.maxlinenr                = '☰ '
 " let g:airline_symbols.dirty                    ='⚡'
 
-" === NERTree plugin === "
-let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heavy feature too. default: normal
+" vim-devicons
+" setting a font to use
+" set guifont=<FONT_NAME> <FONT_SIZE>
 
-" == Exiting == "
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" === Coc Explorer === "
+let g:coc_explorer_global_presets = {
+\   '.vim': {
+\     'root-uri': '~/.vim',
+\   },
+\   'cocConfig': {
+\      'root-uri': '~/.config/coc',
+\   },
+\   'tab': {
+\     'position': 'tab',
+\     'quit-on-open': v:true,
+\   },
+\   'tab:$': {
+\     'position': 'tab:$',
+\     'quit-on-open': v:true,
+\   },
+\   'simplify': {
+\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   },
+\   'buffer': {
+\     'sources': [{'name': 'buffer', 'expand': v:true}]
+\   },
+\ }
 
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Use preset argument to open it
+nmap <leader>ed <Cmd>CocCommand explorer --preset .vim<CR>
+" Not Works on Vim
+" nmap <leader>ef <Cmd>CocCommand explorer --preset floating<CR>
+nmap <leader>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
+nmap <leader>eb <Cmd>CocCommand explorer --preset buffer<CR>
 
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-						\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-" Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+" List all presets
+nmap <space>el <Cmd>CocList explPresets<CR>
 
 " === Vim CTRLP === "
 let g:ctrlp_map = '<c-p>'
@@ -258,7 +271,7 @@ let g:ale_completion_enabled=0
 let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " === Coc.nvim === "
-let g:coc_global_extensions=['coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-emmet', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', 'coc-vetur']
+let g:coc_global_extensions=['coc-explorer', 'coc-git', 'coc-json', 'coc-yaml', 'coc-html', 'coc-emmet', 'coc-css', 'coc-phpls', 'coc-tsserver', 'coc-sh', 'coc-pyright', 'coc-vetur']
 
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
