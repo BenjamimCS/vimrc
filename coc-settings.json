@@ -8,6 +8,7 @@
 
   // Coc Explorer
   "explorer.icon.enableNerdfont": true,
+  "explorer.width": 30,
   "explorer.position": "left",
   // "explorer.previewAction.onHover": true,
   "explorer.icon.source": "vim-devicons"
