@@ -228,6 +228,15 @@ let g:coc_explorer_global_presets = {
 \   },
 \ }
 
+" Open Coc Explorer
+nnoremap <leader>o  <Cmd>CocCommand explorer<CR>
+" Explore Coc's folder
+nnoremap <leader>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
+" Explore buffers
+nnoremap <leader>eb <Cmd>CocCommand explorer --preset buffer<CR>
+" Explore vim's files
+nnoremap <leader>ev <Cmd>CocCommand explorer --preset vim<CR>
+
 " === Vim CTRLP === "
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
