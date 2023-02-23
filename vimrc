@@ -246,10 +246,9 @@ let g:coc_explorer_global_presets = {
 \ }
 
 " Use preset argument to open it
-nmap <leader>ed <Cmd>CocCommand explorer --preset .vim<CR>
-" Not Works on Vim
-" nmap <leader>ef <Cmd>CocCommand explorer --preset floating<CR>
-nmap <leader>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
+nmap <leader>e  <Cmd>CocCommand explorer<CR>
+nmap <leader>ev <Cmd>CocCommand explorer --preset .vim<CR>
+nmap <leader>co <Cmd>CocCommand explorer --preset cocConfig<CR>
 nmap <leader>eb <Cmd>CocCommand explorer --preset buffer<CR>
 
 " List all presets
