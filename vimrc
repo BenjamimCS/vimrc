@@ -100,9 +100,8 @@ let &t_EI = "\<Esc>[2 q"
 " === MAP Keys === "
 let mapleader = " "
 
-" Goto vimrc
+" Source vimrc
 noremap <leader>sv :source $MYVIMRC<CR>
-noremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " == tagbar == "
 nmap <F8> :TagbarToggle<CR>
