@@ -33,7 +33,7 @@ Plug 'tweekmonster/local-indent.vim'
 " tagbar
 Plug 'preservim/tagbar'
 " Lorem Generator
-Plug 'w3bdev1/lorem.vim'
+Plug 'ldong/vim_loremipsum'
 " Emmet Plugin
 Plug 'mattn/emmet-vim'
 
