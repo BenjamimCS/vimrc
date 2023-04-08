@@ -164,7 +164,7 @@ iabbrev wdith width
 " == VIm Colorschme == "
 let g:sonokai_style = 'andromeda'
 let g:sonokai_better_performance = 1 
-colorscheme happy_hacking
+colorscheme gruvbox
 
 " === PLUGINS === "
 " == Emmet == "
@@ -197,7 +197,7 @@ let g:airline#extensions#tabline#enabled       = 1
 let g:airline_powerline_fonts                  = 1
 let g:airline_statusline_ontop                 = 0
 let g:airline_inactive_alt_sep                 = 1
-let g:airline_theme                            = 'hybrid'
+let g:airline_theme                            = 'sonokai'
 let g:airline#extensions#tabline#formatter     = 'unique_tail'
 
 let g:airline_symbols                          = {}
