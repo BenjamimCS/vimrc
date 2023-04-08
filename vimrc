@@ -262,7 +262,7 @@ let g:coc_global_extensions = [
   \'coc-explorer', 'coc-git', 'coc-json',
   \'coc-yaml', 'coc-html', 'coc-emmet',
   \'coc-css', 'coc-phpls', 'coc-tsserver',
-  \'coc-sh', 'coc-pyright', 'coc-vetur'
+  \'coc-sh', 'coc-pyright', '@yaegassy/coc-volar'
 \]
 
 function! ShowDocumentation()
