@@ -49,6 +49,8 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 " Vim Devicons
 Plug 'ryanoasis/vim-devicons'
+" Vim Deus
+Plug 'ajmwagar/vim-deus'
 " Transparent BG
 Plug 'tribela/vim-transparent'
 
