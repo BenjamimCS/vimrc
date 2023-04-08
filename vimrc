@@ -46,9 +46,6 @@ Plug 'artanikin/vim-synthwave84'
 Plug 'aditya-azad/candle-grey'
 " Awesome Colorschemes - pack of themes
 Plug 'rafi/awesome-vim-colorschemes'
-
-" Vim Devicons
-Plug 'ryanoasis/vim-devicons'
 " Vim Deus
 Plug 'ajmwagar/vim-deus'
 " Transparent BG
@@ -65,6 +62,10 @@ Plug 'zefei/vim-wintabs-powerline'
 Plug 'tpope/vim-fugitive'
 " Markdown Preview "
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
+" == Dependencies ==
+" vim-devicons
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
