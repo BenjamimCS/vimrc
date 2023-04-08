@@ -294,3 +294,6 @@ let g:mkdp_echo_preview_url = 1
 
 " === Vim Transparent === "
 let g:clear_background = 0
+
+" === Vim Move === "
+let g:move_key_modifier = 'S'
