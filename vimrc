@@ -70,7 +70,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 set autoread
-set fillchars=vert:\ 
+set fillchars=vert:\│
 
 syntax enable
 set encoding=utf-8
