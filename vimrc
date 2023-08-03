@@ -154,6 +154,7 @@ augroup yaml_tabs
   autocmd!
   autocmd BufNewFile,BufRead,FileType,VimEnter,BufEnter
   \ *.yml,*.yaml setlocal tabstop=3 | setlocal shiftwidth=3
+  \| setlocal cursorcolumn
 augroup END
 
 " === Abbreviations === "
