@@ -251,9 +251,9 @@ nnoremap <leader>ev <Cmd>CocCommand explorer --preset vim<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-let g:ctrlp_custom_ignore='v[/] .(swp|zip)'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_show_hidden=1
+let g:ctrlp_custom_ignore = 'v[/] .(swp|zip)'
+let g:ctrlp_user_command  = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_show_hidden   = 1
 
 " === Vim Ale === "
 let g:ale_linters = {'javascript': ['eslint']}
