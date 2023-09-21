@@ -5,9 +5,9 @@ call plug#begin()
 Plug 'mhinz/vim-startify'
 
 " COC NVIM
-Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 " Ale
 Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'npm ci'}
 " CTRLP.vim
 Plug 'ctrlpvim/ctrlp.vim'
 " Visual Multi
