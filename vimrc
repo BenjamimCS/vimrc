@@ -157,6 +157,13 @@ augroup yaml_tabs
   \| setlocal cursorcolumn
 augroup END
 
+" == Python == "
+augroup python_tabs
+  autocmd!
+  autocmd BufNewFile,BufRead,FileType,VimEnter,BufEnter
+  \ *.py setlocal tabstop=2 | setlocal shiftwidth=2
+augroup END
+
 " === Abbreviations === "
 iabbrev mygh https://github.com/BenjamimCS
 iabbrev wdith width
