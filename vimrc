@@ -148,6 +148,14 @@ nnoremap <c-l> <c-w><Right>
 nnoremap <leader>tt :TransparentToggle<CR>
 
 " === Autocmds === "
+" enable indentation for allowed types
+augroup enbale_indent
+  autocmd!
+  autocmd FileType * if &l:filetype    !=? 'startify'
+                     \  && &l:filetype !=? 'coc-explorer'
+                     \| IndentLinesEnable
+                     \| endif
+augroup END
 
 " == Yaml ==
 augroup yaml_tabs
@@ -288,12 +296,6 @@ inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
 " === IndentLine === "
 let g:indentLine_enabled   = 0
 let g:indentLine_char_list = ['▏']
-
-" == Do not start in any buffer == "
-augroup indentLines_au
-  autocmd!
-  autocmd BufWinEnter *.* IndentLinesEnable
-augroup END
 
 " === MarkdownPreview.nvim === "
 " set to 1, echo preview page url in command line when open preview page
