@@ -10,5 +10,7 @@
       "filetypes": ["lua"]
     }
   },
-  "pyright.inlayHints.variableTypes": false
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.reportOptionalMemberAccess": false
 }
