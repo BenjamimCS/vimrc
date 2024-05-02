@@ -286,12 +286,23 @@ function! ShowDocumentation()
   endif
 endfunction
 
+" == Show documentation == "
+nnoremap <silent> <c-a> :call ShowDocumentation()<CR>
+" == Highlight the symbol and its references when holding the cursor == "
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
 " == Use TAB to confirm completion == "
 inoremap <expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
 
 " == Use j and k to navigate completion "
 inoremap <expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
 inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
+
+" == GoTo code navigation == "
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " === IndentLine === "
 let g:indentLine_enabled   = 0
