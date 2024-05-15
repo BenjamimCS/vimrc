@@ -8,6 +8,11 @@
     "lua": {
       "command": "lua-lsp",
       "filetypes": ["lua"]
+    },
+    "awk": {
+      "command": "awk-language-server",
+      "args": [],
+      "filetypes": ["awk"]
     }
   },
   "pyright.inlayHints.variableTypes": false,
