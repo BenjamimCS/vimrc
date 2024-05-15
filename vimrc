@@ -11,7 +11,7 @@ Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'npm ci'}
 " CTRLP.vim
 Plug 'ctrlpvim/ctrlp.vim'
 " Visual Multi
-Plug 'mg979/vim-visual-multi' 
+Plug 'mg979/vim-visual-multi'
 " Vim Move
 Plug 'matze/vim-move'
 " Comment Lines
@@ -29,7 +29,7 @@ Plug 'jiangmiao/auto-pairs'
 " IndentLine
 Plug 'Yggdroot/indentLine'
 " == Local Indent
-Plug 'tweekmonster/local-indent.vim' 
+Plug 'tweekmonster/local-indent.vim'
 " tagbar
 Plug 'preservim/tagbar'
 " Lorem Generator
@@ -179,7 +179,7 @@ iabbrev wdith width
 " === Themes === "
 " == VIm Colorschme == "
 let g:sonokai_style = 'andromeda'
-let g:sonokai_better_performance = 1 
+let g:sonokai_better_performance = 1
 colorscheme gruvbox
 
 " === PLUGINS === "
