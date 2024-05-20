@@ -17,5 +17,7 @@
   },
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
-  "pyright.reportOptionalMemberAccess": false
+  "pyright.reportOptionalMemberAccess": false,
+
+  "powershell.integratedConsole.showOnStartup": false
 }
