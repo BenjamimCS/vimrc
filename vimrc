@@ -324,7 +324,15 @@ let g:clear_background = 0
 
 " === Vim Move === "
 let g:move_key_modifier = 'S'
+
 " === Vimsence === "
+function s:GetFileExtension()
+  if strlen(&l:filetype) > 0
+    return &l:filetype
+  else
+    return 'text'
+  endif
+endfunction
 let g:vimsence_client_id = '1239669124913958942'
 " let g:vimsence_editing_details = 'Editing a file'
 let g:vimsence_editing_state = 'On {}'
