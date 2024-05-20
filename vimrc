@@ -341,6 +341,16 @@ function s:UpdateEditingDetails(extension)
     return 'Reading a ' . a:extension . ' file'
   endif
 endfunction
+
+augroup update_extension
+    autocmd!
+  " BufNewFile,BufFilePost,BufReadPost,
+  autocmd BufEnter * let s:extension = s:GetFileExtension() |
+  \ let s:details = s:UpdateEditingDetails(s:extension) |
+  \ let g:vimsence_editing_details = s:details |
+  \ let g:vimsence_editing_large_text = s:details
+augroup END
+
 let g:vimsence_client_id = '1239669124913958942'
 " let g:vimsence_editing_details = 'Editing a file'
 let g:vimsence_editing_state = 'On {}'
