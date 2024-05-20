@@ -67,6 +67,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " vim-devicons
 Plug 'ryanoasis/vim-devicons'
 
+" vimsence "
+Plug 'BenjamimCS/vimsence', { 'branch': 'feature/benjamimcs'  }
+
 call plug#end()
 
 set autoread
