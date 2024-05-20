@@ -248,6 +248,9 @@ let g:coc_explorer_global_presets = {
 \     'sources': [{'name': 'buffer', 'expand': v:true}]
 \   },
 \ }
+if has('win32')
+  let g:coc_explorer_global_presets['vim']['root-uri'] = '~/vimfiles'
+endif
 
 " Open Coc Explorer
 nnoremap <leader>o  <Cmd>CocCommand explorer<CR>
