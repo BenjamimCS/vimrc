@@ -324,3 +324,9 @@ let g:clear_background = 0
 
 " === Vim Move === "
 let g:move_key_modifier = 'S'
+" === Vimsence === "
+let g:vimsence_client_id = '1239669124913958942'
+" let g:vimsence_editing_details = 'Editing a file'
+let g:vimsence_editing_state = 'On {}'
+let g:vimsence_custom_icons = {'jsonc': 'jsonc', 'awk': 'awk','ps1': 'powershell', 'sh': 'shell'}
+let g:vimsence_ignored_file_types = ['coc-explorer']
