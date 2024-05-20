@@ -333,6 +333,14 @@ function s:GetFileExtension()
     return 'text'
   endif
 endfunction
+
+function s:UpdateEditingDetails(extension)
+  if &l:modifiable
+    return 'Editing a ' . a:extension . ' file'
+  else
+    return 'Reading a ' . a:extension . ' file'
+  endif
+endfunction
 let g:vimsence_client_id = '1239669124913958942'
 " let g:vimsence_editing_details = 'Editing a file'
 let g:vimsence_editing_state = 'On {}'
