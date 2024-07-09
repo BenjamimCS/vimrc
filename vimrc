@@ -208,6 +208,7 @@ augroup enbale_indent
   autocmd!
   autocmd FileType * if &l:filetype    !=? 'startify'
                      \  && &l:filetype !=? 'coc-explorer'
+                     \  && &l:filetype !=? 'help'
                      \| IndentLinesEnable
                      \| endif
 augroup END
