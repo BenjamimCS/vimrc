@@ -174,8 +174,8 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s      :w<CR>
 inoremap <C-s>     <esc>:w<CR>i
 
-" = <leader> + ; for enter command mode = "
-nnoremap <leader>; :
+" = ; for enter command mode = "
+nnoremap ; :
 
 " == Wrap/Unwrap == "
 nnoremap <leader>w :set wrap!<CR>
