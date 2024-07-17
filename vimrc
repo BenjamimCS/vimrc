@@ -32,6 +32,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'tweekmonster/local-indent.vim'
 " tagbar
 Plug 'preservim/tagbar'
+" tern_for_vim
+Plug 'https://github.com/ternjs/tern_for_vim.git', {'do': 'npm install'}
 " Lorem Generator
 Plug 'ldong/vim_loremipsum'
 " Emmet Plugin
