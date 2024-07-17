@@ -202,6 +202,10 @@ nnoremap <c-l> <c-w><Right>
 " == Transparent == "
 nnoremap <leader>tt :TransparentToggle<CR>
 
+" == Navigate between tabs == "
+nnoremap <leader>n :tabnext<CR>
+nnoremap <leader>p :tabprevious<CR>
+
 " === Autocmds === "
 " enable indentation for allowed types
 augroup enbale_indent
