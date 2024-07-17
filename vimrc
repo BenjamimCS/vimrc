@@ -357,6 +357,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" == Delete line in insert mode
+inoremap <c-d> <Esc>ddi
+
 " === IndentLine === "
 let g:indentLine_char_list = ['▏']
 let g:indentLine_fileTypeExclude = ['help', 'startify', 'coc-explorer']
