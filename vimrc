@@ -181,7 +181,6 @@ nnoremap ; :
 nnoremap <leader>w :set wrap!<CR>
 
 " == press , + CTRL + U to Uppercase the current word == "
-nnoremap <c-u> v e U w
 inoremap <c-u> <esc>v e U w<esc>i
 
 " == Resize windows == "
