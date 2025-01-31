@@ -363,7 +363,7 @@ inoremap <c-d> <Esc>ddi
 " === IndentLine === "
 let g:indentLine_char_list = ['▏']
 let g:indentLine_fileTypeExclude = ['help', 'startify', 'coc-explorer']
-
+let g:indentLine_setColors = 0
 " === MarkdownPreview.nvim === "
 " set to 1, echo preview page url in command line when open preview page
 " default is 0
