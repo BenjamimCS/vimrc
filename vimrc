@@ -207,6 +207,15 @@ nnoremap <leader>tt :TransparentToggle<CR>
 nnoremap <leader>n :tabnext<CR>
 nnoremap <leader>p :tabprevious<CR>
 
+" === Autocmds === "
+" == Python == "
+augroup python_tabs
+  autocmd!
+  autocmd BufNewFile,BufRead,FileType,VimEnter,BufEnter
+  \ *.py setlocal tabstop=2 | setlocal shiftwidth=2
+  \| setlocal cursorcolumn
+augroup END
+
 " == Yaml ==
 augroup yaml_tabs
   autocmd!
