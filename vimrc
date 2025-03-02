@@ -71,6 +71,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " vimsence "
 Plug 'BenjamimCS/vimsence', { 'branch': 'feature/benjamimcs'  }
+Plug 'lervag/vimtex'
 
 call plug#end()
 
